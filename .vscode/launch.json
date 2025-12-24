@@ -1,0 +1,77 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug: Run Day 01 (via run.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/adventpy/run.py",
+            "args": [
+                "01",
+                "--part", "sol1",
+                "--data", "sample"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/adventpy",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/adventpy"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Debug: Run Day 01 (via run.py) - Input",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/adventpy/run.py",
+            "args": [
+                "01",
+                "--part", "sol1",
+                "--data", "input1"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/adventpy",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/adventpy"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Debug: Day 01 Solution (direct)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/adventpy/puzzles/day_01/solution.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/adventpy",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/adventpy"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Debug: Day 01 Solution (as module)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "puzzles.day_01.solution",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/adventpy",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/adventpy"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Debug: Current Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/adventpy",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/adventpy"
+            },
+            "justMyCode": false
+        }
+    ]
+}
+
+
